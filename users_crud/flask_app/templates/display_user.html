@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Displaying User</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <br><br>
+    <center><h1>{{ one_user.first_name }}'s Profile</h1></center>
+
+    <div class="display">
+        <h4>Full Name: {{ one_user.first_name }} {{ one_user.last_name }}</h4>
+        <h4>Email: {{ one_user.email }}</h4>
+        <h4>Created On: {{ one_user.created_at }}</h4>
+        <h4>Updated On: {{ one_user.updated_at }}</h4>
+        <br>
+        <div class="flex">
+            <a href="/edit_user/{{one_user.id}}"><input type="submit" value="Edit" class="btngreen"></a>&nbsp&nbsp&nbsp&nbsp
+            <a href="/delete_user/{{one_user.id}}"><input type="submit" value="Delete" class="btnred"></a>
+        </div>
+    </div>
+    <br>
+    <center><a href="/"><input type="button" value="Home" class="btn"></a></center>
+
+</body>
+</html>

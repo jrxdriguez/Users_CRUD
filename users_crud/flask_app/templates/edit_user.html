@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update User</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+<body>
+
+    <center><h1>Editing {{ one_user.first_name}}'s Profile</h1></center>
+
+    <form action="/update_user/{{one_user.id}}" method="post" class="form">
+        <h2>Edit User</h2>
+        <div>
+            <label for="first_name">First Name: </label>
+            <input type="text" name="first_name" value="{{one_user.first_name}}" placeholder="{{one_user.first_name}}">
+        </div><br>
+        <div>
+            <label for="last_name">Last Name: </label>
+            <input type="text" name="last_name" value="{{one_user.last_name}}" placeholder="{{one_user.last_name}}">
+        </div><br>
+        <div>
+            <label for="email">Email: </label>
+            <input type="text" name="email" value="{{one_user.email}}" placeholder="{{one_user.email}}">
+        </div>
+        <br><br>
+            <div class="flex">
+                <input type="submit" value="Edit User" class="btngreen">&nbsp&nbsp&nbsp&nbsp
+                <a href="/"><input type="button" value="Home" class="btn"></a>
+            </div>
+  
+    </form>
+    <br><br>
+
+    
+    
+</body>
+</html>

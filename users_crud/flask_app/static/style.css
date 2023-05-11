@@ -1,0 +1,102 @@
+.table {
+    border-spacing: 0;
+    margin: 2rem;
+    background-color: rgb(180, 170, 170);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table_row:nth-child(even) {
+    background-color: e5e5e5;
+}
+
+.table_c {
+    padding: 10px;
+
+}
+
+.table, th, tr, td {
+    border: 1px black solid;
+}
+
+
+
+.flex {
+    display:flex;
+}
+
+.title {
+    color: rgb(30, 129, 222);
+}
+
+.form {
+    background-color: rgb(180, 170, 170);
+    margin: auto;
+    width: 500px;
+    padding-left:30px;
+    padding-top:10px;
+    padding-bottom:30px;
+    margin-top: 30px;
+}
+
+.adduser_btn {
+    background-color: rgb(180, 170, 170); 
+    padding-left:7px;
+    padding-right:7px;
+}
+
+.btn {
+    background-color: rgb(30, 129, 222); 
+    padding-left:7px;
+    padding-right:7px;
+    border-radius: 10px;
+}
+.btncreate {
+    background-color:whitesmoke; 
+    padding-left:7px;
+    padding-right:7px;
+    border-radius: 10px;
+}
+.btngreen {
+    background-color: green; 
+    padding-left:7px;
+    padding-right:7px;
+    border-radius: 10px;
+}
+.btnred {
+    background-color: red; 
+    padding-left:7px;
+    padding-right:7px;
+    border-radius: 10px;
+}
+
+
+.form2 {
+    background-color: rgb(89, 83, 83);
+    margin: auto;
+    width: 450px;
+    padding-left:30px;
+    padding-top:10px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.name {
+    color: rgb(30, 129, 222);
+}
+
+.display {
+    background-color:  rgb(180, 170, 170);
+    margin: auto;
+    width: 350px;
+    padding-left:30px;
+    padding-top:10px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+}
+
+.center {
+    margin: auto;
+    width: 120px;
+}
